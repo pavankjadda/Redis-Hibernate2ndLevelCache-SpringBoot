@@ -1,2 +1,2 @@
-### Redis cache implementation using Spring Cache Abstraction, Spring Boot and Spring Data Jpa
-Redis cache implementation using Spring Cache Abstraction, Spring Boot and Spring Data Jpa
+### Implement Hibernate 2nd level Cache with Redis, Spring Boot, and Spring Data JPA
+Implement Hibernate 2nd level Cache with Redis, Spring Boot, and Spring Data JPA
