@@ -1,2 +1,2 @@
-### Hazelcast cache demo with Spring Boot
-Hazelcast cache demo with Spring Boot
+### Redis cache implementation using Spring Cache Abstraction, Spring Boot and Spring Data Jpa
+Redis cache implementation using Spring Cache Abstraction, Spring Boot and Spring Data Jpa
