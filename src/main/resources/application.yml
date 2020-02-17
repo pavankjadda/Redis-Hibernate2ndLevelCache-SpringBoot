@@ -1,0 +1,44 @@
+
+
+### Server information
+server:
+  port: 8080
+
+### Spring Properties
+spring:
+  application:
+    name: PRES 2.0
+  cache:
+    type: redis
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+  ### Spring datasource Properties
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+    initialization-mode: always
+
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+        ddl-auto: create-drop
+        show_sql: true
+        cache:
+          use_query_cache: true
+          use_second_level_cache: true
+          factory_class: org.redisson.hibernate.RedissonRegionFactory
+          redisson:
+            fallback: true
+            config: redission/redisson-dev.yaml
+
+  # Redis host details
+  redis:
+    host: localhost
+    port: 6379

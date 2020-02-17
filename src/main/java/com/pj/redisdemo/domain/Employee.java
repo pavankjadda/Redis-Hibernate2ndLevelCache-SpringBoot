@@ -13,6 +13,9 @@ import javax.persistence.Id;
 public class Employee
 {
 	@Id
-	private String empId;
-	private String empName;
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String phone;
 }

@@ -16,9 +16,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<hazelcast.version>4.0</hazelcast.version>
-		<hazelcast-hibernate53.version>2.0.0</hazelcast-hibernate53.version>
-		<hazelcast-client.version>3.12.6</hazelcast-client.version>
+		<redisson-hibernate-53.version>3.12.1</redisson-hibernate-53.version>
 	</properties>
 
 	<dependencies>
@@ -38,18 +36,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
-			<groupId>com.hazelcast</groupId>
-			<artifactId>hazelcast-spring</artifactId>
-			<version>${hazelcast.version}</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson-hibernate-53</artifactId>
+			<version>${redisson-hibernate-53.version}</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.hazelcast</groupId>
-			<artifactId>hazelcast-hibernate53</artifactId>
-			<version>${hazelcast-hibernate53.version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>com.h2database</groupId>
