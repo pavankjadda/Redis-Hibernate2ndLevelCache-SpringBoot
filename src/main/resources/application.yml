@@ -38,7 +38,3 @@ spring:
             fallback: true
             config: redission/redisson-dev.yaml
 
-  # Redis host details
-  redis:
-    host: localhost
-    port: 6379
